@@ -8,22 +8,30 @@
 
 /* Begin PBXBuildFile section */
 		FAF3C7D12B0DCD2F0029AB14 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF3C7D02B0DCD2F0029AB14 /* AppDelegate.swift */; };
-		FAF3C7D32B0DCD2F0029AB14 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF3C7D22B0DCD2F0029AB14 /* SceneDelegate.swift */; };
 		FAF3C7D52B0DCD2F0029AB14 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF3C7D42B0DCD2F0029AB14 /* ViewController.swift */; };
 		FAF3C7D82B0DCD2F0029AB14 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAF3C7D62B0DCD2F0029AB14 /* Main.storyboard */; };
 		FAF3C7DA2B0DCD300029AB14 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAF3C7D92B0DCD300029AB14 /* Assets.xcassets */; };
 		FAF3C7DD2B0DCD300029AB14 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAF3C7DB2B0DCD300029AB14 /* LaunchScreen.storyboard */; };
+		FAF3C7F12B0DCF290029AB14 /* UserListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF3C7ED2B0DCF290029AB14 /* UserListCell.swift */; };
+		FAF3C7F22B0DCF290029AB14 /* UserListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF3C7EE2B0DCF290029AB14 /* UserListViewController.swift */; };
+		FAF3C7F32B0DCF290029AB14 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF3C7EF2B0DCF290029AB14 /* User.swift */; };
+		FAF3C7F42B0DCF290029AB14 /* UserListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAF3C7F02B0DCF290029AB14 /* UserListCell.xib */; };
+		FAF3C8012B0E06A60029AB14 /* NavigationModule in Frameworks */ = {isa = PBXBuildFile; productRef = FAF3C8002B0E06A60029AB14 /* NavigationModule */; };
+		FAF3C8042B0E06B30029AB14 /* PlainListViewController in Frameworks */ = {isa = PBXBuildFile; productRef = FAF3C8032B0E06B30029AB14 /* PlainListViewController */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		FAF3C7CD2B0DCD2F0029AB14 /* Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAF3C7D02B0DCD2F0029AB14 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FAF3C7D22B0DCD2F0029AB14 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		FAF3C7D42B0DCD2F0029AB14 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		FAF3C7D72B0DCD2F0029AB14 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FAF3C7D92B0DCD300029AB14 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FAF3C7DC2B0DCD300029AB14 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FAF3C7DE2B0DCD300029AB14 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAF3C7ED2B0DCF290029AB14 /* UserListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserListCell.swift; sourceTree = "<group>"; };
+		FAF3C7EE2B0DCF290029AB14 /* UserListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserListViewController.swift; sourceTree = "<group>"; };
+		FAF3C7EF2B0DCF290029AB14 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		FAF3C7F02B0DCF290029AB14 /* UserListCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UserListCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +39,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAF3C8042B0E06B30029AB14 /* PlainListViewController in Frameworks */,
+				FAF3C8012B0E06A60029AB14 /* NavigationModule in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +52,7 @@
 			children = (
 				FAF3C7CF2B0DCD2F0029AB14 /* Example */,
 				FAF3C7CE2B0DCD2F0029AB14 /* Products */,
+				FAF3C7FA2B0E02CB0029AB14 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,14 +68,32 @@
 			isa = PBXGroup;
 			children = (
 				FAF3C7D02B0DCD2F0029AB14 /* AppDelegate.swift */,
-				FAF3C7D22B0DCD2F0029AB14 /* SceneDelegate.swift */,
 				FAF3C7D42B0DCD2F0029AB14 /* ViewController.swift */,
+				FAF3C7EC2B0DCF290029AB14 /* UserList */,
 				FAF3C7D62B0DCD2F0029AB14 /* Main.storyboard */,
 				FAF3C7D92B0DCD300029AB14 /* Assets.xcassets */,
 				FAF3C7DB2B0DCD300029AB14 /* LaunchScreen.storyboard */,
 				FAF3C7DE2B0DCD300029AB14 /* Info.plist */,
 			);
 			path = Example;
+			sourceTree = "<group>";
+		};
+		FAF3C7EC2B0DCF290029AB14 /* UserList */ = {
+			isa = PBXGroup;
+			children = (
+				FAF3C7EF2B0DCF290029AB14 /* User.swift */,
+				FAF3C7ED2B0DCF290029AB14 /* UserListCell.swift */,
+				FAF3C7F02B0DCF290029AB14 /* UserListCell.xib */,
+				FAF3C7EE2B0DCF290029AB14 /* UserListViewController.swift */,
+			);
+			path = UserList;
+			sourceTree = "<group>";
+		};
+		FAF3C7FA2B0E02CB0029AB14 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +112,10 @@
 			dependencies = (
 			);
 			name = Example;
+			packageProductDependencies = (
+				FAF3C8002B0E06A60029AB14 /* NavigationModule */,
+				FAF3C8032B0E06B30029AB14 /* PlainListViewController */,
+			);
 			productName = Example;
 			productReference = FAF3C7CD2B0DCD2F0029AB14 /* Example.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +144,10 @@
 				Base,
 			);
 			mainGroup = FAF3C7C42B0DCD2F0029AB14;
+			packageReferences = (
+				FAF3C7FF2B0E06A60029AB14 /* XCRemoteSwiftPackageReference "NavigationModule" */,
+				FAF3C8022B0E06B30029AB14 /* XCRemoteSwiftPackageReference "PlainListViewController" */,
+			);
 			productRefGroup = FAF3C7CE2B0DCD2F0029AB14 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -126,6 +163,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FAF3C7DD2B0DCD300029AB14 /* LaunchScreen.storyboard in Resources */,
+				FAF3C7F42B0DCF290029AB14 /* UserListCell.xib in Resources */,
 				FAF3C7DA2B0DCD300029AB14 /* Assets.xcassets in Resources */,
 				FAF3C7D82B0DCD2F0029AB14 /* Main.storyboard in Resources */,
 			);
@@ -139,8 +177,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				FAF3C7D52B0DCD2F0029AB14 /* ViewController.swift in Sources */,
+				FAF3C7F12B0DCF290029AB14 /* UserListCell.swift in Sources */,
 				FAF3C7D12B0DCD2F0029AB14 /* AppDelegate.swift in Sources */,
-				FAF3C7D32B0DCD2F0029AB14 /* SceneDelegate.swift in Sources */,
+				FAF3C7F32B0DCF290029AB14 /* User.swift in Sources */,
+				FAF3C7F22B0DCF290029AB14 /* UserListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -361,6 +401,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		FAF3C7FF2B0E06A60029AB14 /* XCRemoteSwiftPackageReference "NavigationModule" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/unaSheng/NavigationModule.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.2.0;
+			};
+		};
+		FAF3C8022B0E06B30029AB14 /* XCRemoteSwiftPackageReference "PlainListViewController" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/unaSheng/PlainListViewController.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.2.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		FAF3C8002B0E06A60029AB14 /* NavigationModule */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FAF3C7FF2B0E06A60029AB14 /* XCRemoteSwiftPackageReference "NavigationModule" */;
+			productName = NavigationModule;
+		};
+		FAF3C8032B0E06B30029AB14 /* PlainListViewController */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FAF3C8022B0E06B30029AB14 /* XCRemoteSwiftPackageReference "PlainListViewController" */;
+			productName = PlainListViewController;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = FAF3C7C52B0DCD2F0029AB14 /* Project object */;
 }
