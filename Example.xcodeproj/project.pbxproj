@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		255894BCD66AB90BC0292AF6 /* libPods-Example.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E809A08A233C71228BE9D0D /* libPods-Example.a */; };
 		FAF3C7D12B0DCD2F0029AB14 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF3C7D02B0DCD2F0029AB14 /* AppDelegate.swift */; };
 		FAF3C7D52B0DCD2F0029AB14 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF3C7D42B0DCD2F0029AB14 /* ViewController.swift */; };
 		FAF3C7D82B0DCD2F0029AB14 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAF3C7D62B0DCD2F0029AB14 /* Main.storyboard */; };
@@ -21,6 +22,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2E809A08A233C71228BE9D0D /* libPods-Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		343EFF8F52A4264D7346E00A /* Pods-Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Example.release.xcconfig"; path = "Target Support Files/Pods-Example/Pods-Example.release.xcconfig"; sourceTree = "<group>"; };
+		67A66D2A89F8B52EB6C97ADF /* Pods-Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Example.debug.xcconfig"; path = "Target Support Files/Pods-Example/Pods-Example.debug.xcconfig"; sourceTree = "<group>"; };
 		FAF3C7CD2B0DCD2F0029AB14 /* Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAF3C7D02B0DCD2F0029AB14 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FAF3C7D42B0DCD2F0029AB14 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -41,18 +45,30 @@
 			files = (
 				FAF3C8042B0E06B30029AB14 /* PlainListViewController in Frameworks */,
 				FAF3C8012B0E06A60029AB14 /* NavigationModule in Frameworks */,
+				255894BCD66AB90BC0292AF6 /* libPods-Example.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5312B4A99FE0CB0067151A63 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				67A66D2A89F8B52EB6C97ADF /* Pods-Example.debug.xcconfig */,
+				343EFF8F52A4264D7346E00A /* Pods-Example.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		FAF3C7C42B0DCD2F0029AB14 = {
 			isa = PBXGroup;
 			children = (
 				FAF3C7CF2B0DCD2F0029AB14 /* Example */,
 				FAF3C7CE2B0DCD2F0029AB14 /* Products */,
 				FAF3C7FA2B0E02CB0029AB14 /* Frameworks */,
+				5312B4A99FE0CB0067151A63 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -92,6 +108,7 @@
 		FAF3C7FA2B0E02CB0029AB14 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2E809A08A233C71228BE9D0D /* libPods-Example.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -103,6 +120,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FAF3C7E12B0DCD300029AB14 /* Build configuration list for PBXNativeTarget "Example" */;
 			buildPhases = (
+				05A63C3FE6521B0028F81917 /* [CP] Check Pods Manifest.lock */,
 				FAF3C7C92B0DCD2F0029AB14 /* Sources */,
 				FAF3C7CA2B0DCD2F0029AB14 /* Frameworks */,
 				FAF3C7CB2B0DCD2F0029AB14 /* Resources */,
@@ -145,8 +163,8 @@
 			);
 			mainGroup = FAF3C7C42B0DCD2F0029AB14;
 			packageReferences = (
-				FAF3C7FF2B0E06A60029AB14 /* XCRemoteSwiftPackageReference "NavigationModule" */,
-				FAF3C8022B0E06B30029AB14 /* XCRemoteSwiftPackageReference "PlainListViewController" */,
+				FAF3C7FF2B0E06A60029AB14 /* XCRemoteSwiftPackageReference "NavigationModule.git" */,
+				FAF3C8022B0E06B30029AB14 /* XCRemoteSwiftPackageReference "PlainListViewController.git" */,
 			);
 			productRefGroup = FAF3C7CE2B0DCD2F0029AB14 /* Products */;
 			projectDirPath = "";
@@ -170,6 +188,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		05A63C3FE6521B0028F81917 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Example-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		FAF3C7C92B0DCD2F0029AB14 /* Sources */ = {
@@ -327,6 +370,7 @@
 		};
 		FAF3C7E22B0DCD300029AB14 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 67A66D2A89F8B52EB6C97ADF /* Pods-Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -354,6 +398,7 @@
 		};
 		FAF3C7E32B0DCD300029AB14 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 343EFF8F52A4264D7346E00A /* Pods-Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -403,7 +448,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		FAF3C7FF2B0E06A60029AB14 /* XCRemoteSwiftPackageReference "NavigationModule" */ = {
+		FAF3C7FF2B0E06A60029AB14 /* XCRemoteSwiftPackageReference "NavigationModule.git" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/unaSheng/NavigationModule.git";
 			requirement = {
@@ -411,7 +456,7 @@
 				minimumVersion = 1.2.0;
 			};
 		};
-		FAF3C8022B0E06B30029AB14 /* XCRemoteSwiftPackageReference "PlainListViewController" */ = {
+		FAF3C8022B0E06B30029AB14 /* XCRemoteSwiftPackageReference "PlainListViewController.git" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/unaSheng/PlainListViewController.git";
 			requirement = {
@@ -424,12 +469,12 @@
 /* Begin XCSwiftPackageProductDependency section */
 		FAF3C8002B0E06A60029AB14 /* NavigationModule */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = FAF3C7FF2B0E06A60029AB14 /* XCRemoteSwiftPackageReference "NavigationModule" */;
+			package = FAF3C7FF2B0E06A60029AB14 /* XCRemoteSwiftPackageReference "NavigationModule.git" */;
 			productName = NavigationModule;
 		};
 		FAF3C8032B0E06B30029AB14 /* PlainListViewController */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = FAF3C8022B0E06B30029AB14 /* XCRemoteSwiftPackageReference "PlainListViewController" */;
+			package = FAF3C8022B0E06B30029AB14 /* XCRemoteSwiftPackageReference "PlainListViewController.git" */;
 			productName = PlainListViewController;
 		};
 /* End XCSwiftPackageProductDependency section */

@@ -1,0 +1,6 @@
+module SimplePlainList {
+  umbrella header "SimplePlainList-umbrella.h"
+
+  export *
+  module * { export * }
+}

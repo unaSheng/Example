@@ -26,16 +26,18 @@ class UserListViewController: PlainListViewController<User, UserListCell> {
         }))
         navigationItem.leftBarButtonItems = [backItem]
         
-        
-        let editItem = UIBarButtonItem(image: UIImage(systemName: "pencil"), primaryAction: UIAction.init(handler: { _ in
+        let editItem = BadgeBarButtonItem(title: "编辑", primaryAction: UIAction.init(handler: { _ in
             debugPrint("edit")
         }))
         
-        let shareItem = UIBarButtonItem(image: UIImage(systemName: "square.and.arrow.up"), primaryAction: UIAction.init(handler: { _ in
+        editItem.badge = .text("9")
+        
+        let shareItem = BadgeBarButtonItem(image: UIImage(systemName: "square.and.arrow.up"), primaryAction: UIAction.init(handler: { _ in
             debugPrint("share")
         }))
+        shareItem.badge = .dot
         
-        let moreItem = UIBarButtonItem(image: UIImage(systemName: "ellipsis"), primaryAction: UIAction.init(handler: { _ in
+        let moreItem = BadgeBarButtonItem(image: UIImage(systemName: "ellipsis"), primaryAction: UIAction.init(handler: { _ in
             debugPrint("more")
         }))
         

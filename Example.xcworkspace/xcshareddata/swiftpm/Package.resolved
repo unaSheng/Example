@@ -1,0 +1,32 @@
+{
+  "pins" : [
+    {
+      "identity" : "mjrefresh",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/CoderMJLee/MJRefresh",
+      "state" : {
+        "revision" : "b9c5464d5480001b7e3b0cdf4c34f4a683d3acd5",
+        "version" : "3.7.6"
+      }
+    },
+    {
+      "identity" : "navigationmodule",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/unaSheng/NavigationModule.git",
+      "state" : {
+        "revision" : "dd465a5488fb3b9645fffb0b9b711d13e3fe2607",
+        "version" : "1.2.0"
+      }
+    },
+    {
+      "identity" : "plainlistviewcontroller",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/unaSheng/PlainListViewController.git",
+      "state" : {
+        "revision" : "d90779b87c40dddd6a457445bfe0316975c40755",
+        "version" : "1.2.0"
+      }
+    }
+  ],
+  "version" : 2
+}

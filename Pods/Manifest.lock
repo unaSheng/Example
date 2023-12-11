@@ -1,0 +1,21 @@
+PODS:
+  - SimplePlainList (0.1.0)
+
+DEPENDENCIES:
+  - SimplePlainList (from `https://github.com/unaSheng/SimplePlainList.git`)
+
+EXTERNAL SOURCES:
+  SimplePlainList:
+    :git: https://github.com/unaSheng/SimplePlainList.git
+
+CHECKOUT OPTIONS:
+  SimplePlainList:
+    :commit: b2fda295db9e2a8bcfc7d5e764c026970cf5b952
+    :git: https://github.com/unaSheng/SimplePlainList.git
+
+SPEC CHECKSUMS:
+  SimplePlainList: 9cf45ad1e1511ba156d246fced0c3fdf09d85bb1
+
+PODFILE CHECKSUM: 60d3dd117968ee420f8d48c5f814367b80a10ece
+
+COCOAPODS: 1.13.0
