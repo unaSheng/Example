@@ -9,12 +9,11 @@ import UIKit
 import SimplePlainList
 
 class ViewController: UIViewController {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
     }
-
+    
     @IBAction func simpleListButtonTapped(_ sender: Any) {
         let userListVC = UserListViewController(dataProvider: UserListDataProvider())
         navigationController?.navigationBar.isHidden = true
@@ -22,4 +21,3 @@ class ViewController: UIViewController {
     }
     
 }
-

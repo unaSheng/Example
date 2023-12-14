@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		255894BCD66AB90BC0292AF6 /* libPods-Example.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E809A08A233C71228BE9D0D /* libPods-Example.a */; };
+		FA9263262B2AA58200C96EE9 /* InterestListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9263252B2AA58200C96EE9 /* InterestListCell.swift */; };
+		FA9263282B2AA59100C96EE9 /* InterestListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9263272B2AA59100C96EE9 /* InterestListViewController.swift */; };
+		FA92632A2B2AA61D00C96EE9 /* Interest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9263292B2AA61D00C96EE9 /* Interest.swift */; };
+		FAA259B82B2952F90019D4FA /* NavigationModule in Frameworks */ = {isa = PBXBuildFile; productRef = FAA259B72B2952F90019D4FA /* NavigationModule */; };
+		FAA259BA2B2952FC0019D4FA /* PlainListViewController in Frameworks */ = {isa = PBXBuildFile; productRef = FAA259B92B2952FC0019D4FA /* PlainListViewController */; };
 		FAF3C7D12B0DCD2F0029AB14 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF3C7D02B0DCD2F0029AB14 /* AppDelegate.swift */; };
 		FAF3C7D52B0DCD2F0029AB14 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF3C7D42B0DCD2F0029AB14 /* ViewController.swift */; };
 		FAF3C7D82B0DCD2F0029AB14 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAF3C7D62B0DCD2F0029AB14 /* Main.storyboard */; };
@@ -17,14 +22,17 @@
 		FAF3C7F22B0DCF290029AB14 /* UserListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF3C7EE2B0DCF290029AB14 /* UserListViewController.swift */; };
 		FAF3C7F32B0DCF290029AB14 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF3C7EF2B0DCF290029AB14 /* User.swift */; };
 		FAF3C7F42B0DCF290029AB14 /* UserListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAF3C7F02B0DCF290029AB14 /* UserListCell.xib */; };
-		FAF3C8012B0E06A60029AB14 /* NavigationModule in Frameworks */ = {isa = PBXBuildFile; productRef = FAF3C8002B0E06A60029AB14 /* NavigationModule */; };
-		FAF3C8042B0E06B30029AB14 /* PlainListViewController in Frameworks */ = {isa = PBXBuildFile; productRef = FAF3C8032B0E06B30029AB14 /* PlainListViewController */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2E809A08A233C71228BE9D0D /* libPods-Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		343EFF8F52A4264D7346E00A /* Pods-Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Example.release.xcconfig"; path = "Target Support Files/Pods-Example/Pods-Example.release.xcconfig"; sourceTree = "<group>"; };
 		67A66D2A89F8B52EB6C97ADF /* Pods-Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Example.debug.xcconfig"; path = "Target Support Files/Pods-Example/Pods-Example.debug.xcconfig"; sourceTree = "<group>"; };
+		FA7585B22B28372900A5FC6E /* NavigationModule */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = NavigationModule; path = ../NavigationModule; sourceTree = "<group>"; };
+		FA9263252B2AA58200C96EE9 /* InterestListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterestListCell.swift; sourceTree = "<group>"; };
+		FA9263272B2AA59100C96EE9 /* InterestListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterestListViewController.swift; sourceTree = "<group>"; };
+		FA9263292B2AA61D00C96EE9 /* Interest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Interest.swift; sourceTree = "<group>"; };
+		FAA259B62B2952930019D4FA /* PlainListViewController */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = PlainListViewController; path = ../PlainListViewController; sourceTree = "<group>"; };
 		FAF3C7CD2B0DCD2F0029AB14 /* Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAF3C7D02B0DCD2F0029AB14 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FAF3C7D42B0DCD2F0029AB14 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -43,9 +51,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FAF3C8042B0E06B30029AB14 /* PlainListViewController in Frameworks */,
-				FAF3C8012B0E06A60029AB14 /* NavigationModule in Frameworks */,
+				FAA259B82B2952F90019D4FA /* NavigationModule in Frameworks */,
 				255894BCD66AB90BC0292AF6 /* libPods-Example.a in Frameworks */,
+				FAA259BA2B2952FC0019D4FA /* PlainListViewController in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,13 +66,14 @@
 				67A66D2A89F8B52EB6C97ADF /* Pods-Example.debug.xcconfig */,
 				343EFF8F52A4264D7346E00A /* Pods-Example.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
 		FAF3C7C42B0DCD2F0029AB14 = {
 			isa = PBXGroup;
 			children = (
+				FAA259B62B2952930019D4FA /* PlainListViewController */,
+				FA7585B22B28372900A5FC6E /* NavigationModule */,
 				FAF3C7CF2B0DCD2F0029AB14 /* Example */,
 				FAF3C7CE2B0DCD2F0029AB14 /* Products */,
 				FAF3C7FA2B0E02CB0029AB14 /* Frameworks */,
@@ -101,6 +110,9 @@
 				FAF3C7ED2B0DCF290029AB14 /* UserListCell.swift */,
 				FAF3C7F02B0DCF290029AB14 /* UserListCell.xib */,
 				FAF3C7EE2B0DCF290029AB14 /* UserListViewController.swift */,
+				FA9263292B2AA61D00C96EE9 /* Interest.swift */,
+				FA9263252B2AA58200C96EE9 /* InterestListCell.swift */,
+				FA9263272B2AA59100C96EE9 /* InterestListViewController.swift */,
 			);
 			path = UserList;
 			sourceTree = "<group>";
@@ -131,8 +143,8 @@
 			);
 			name = Example;
 			packageProductDependencies = (
-				FAF3C8002B0E06A60029AB14 /* NavigationModule */,
-				FAF3C8032B0E06B30029AB14 /* PlainListViewController */,
+				FAA259B72B2952F90019D4FA /* NavigationModule */,
+				FAA259B92B2952FC0019D4FA /* PlainListViewController */,
 			);
 			productName = Example;
 			productReference = FAF3C7CD2B0DCD2F0029AB14 /* Example.app */;
@@ -163,8 +175,6 @@
 			);
 			mainGroup = FAF3C7C42B0DCD2F0029AB14;
 			packageReferences = (
-				FAF3C7FF2B0E06A60029AB14 /* XCRemoteSwiftPackageReference "NavigationModule.git" */,
-				FAF3C8022B0E06B30029AB14 /* XCRemoteSwiftPackageReference "PlainListViewController.git" */,
 			);
 			productRefGroup = FAF3C7CE2B0DCD2F0029AB14 /* Products */;
 			projectDirPath = "";
@@ -222,8 +232,11 @@
 				FAF3C7D52B0DCD2F0029AB14 /* ViewController.swift in Sources */,
 				FAF3C7F12B0DCF290029AB14 /* UserListCell.swift in Sources */,
 				FAF3C7D12B0DCD2F0029AB14 /* AppDelegate.swift in Sources */,
+				FA9263262B2AA58200C96EE9 /* InterestListCell.swift in Sources */,
+				FA9263282B2AA59100C96EE9 /* InterestListViewController.swift in Sources */,
 				FAF3C7F32B0DCF290029AB14 /* User.swift in Sources */,
 				FAF3C7F22B0DCF290029AB14 /* UserListViewController.swift in Sources */,
+				FA92632A2B2AA61D00C96EE9 /* Interest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -301,7 +314,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -358,7 +371,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -376,6 +389,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = DDPY9JD4B3;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Example/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -404,6 +418,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = DDPY9JD4B3;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Example/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -447,34 +462,13 @@
 		};
 /* End XCConfigurationList section */
 
-/* Begin XCRemoteSwiftPackageReference section */
-		FAF3C7FF2B0E06A60029AB14 /* XCRemoteSwiftPackageReference "NavigationModule.git" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/unaSheng/NavigationModule.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 1.2.0;
-			};
-		};
-		FAF3C8022B0E06B30029AB14 /* XCRemoteSwiftPackageReference "PlainListViewController.git" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/unaSheng/PlainListViewController.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 1.2.0;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
 /* Begin XCSwiftPackageProductDependency section */
-		FAF3C8002B0E06A60029AB14 /* NavigationModule */ = {
+		FAA259B72B2952F90019D4FA /* NavigationModule */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = FAF3C7FF2B0E06A60029AB14 /* XCRemoteSwiftPackageReference "NavigationModule.git" */;
 			productName = NavigationModule;
 		};
-		FAF3C8032B0E06B30029AB14 /* PlainListViewController */ = {
+		FAA259B92B2952FC0019D4FA /* PlainListViewController */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = FAF3C8022B0E06B30029AB14 /* XCRemoteSwiftPackageReference "PlainListViewController.git" */;
 			productName = PlainListViewController;
 		};
 /* End XCSwiftPackageProductDependency section */

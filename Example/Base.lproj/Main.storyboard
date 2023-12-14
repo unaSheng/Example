@@ -46,22 +46,12 @@
                                     </button>
                                 </subviews>
                             </stackView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2yk-tc-woo" customClass="RedView" customModule="SimplePlainList">
-                                <rect key="frame" x="10" y="708" width="373" height="100"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="100" id="ZdT-Pd-XfY"/>
-                                </constraints>
-                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="ohN-rJ-oK9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ACJ-Br-0fL"/>
-                            <constraint firstItem="2yk-tc-woo" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="cn6-Zp-VD6"/>
                             <constraint firstItem="ohN-rJ-oK9" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="czk-xA-Gmv"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="2yk-tc-woo" secondAttribute="trailing" constant="10" id="tID-SP-H0E"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="2yk-tc-woo" secondAttribute="bottom" constant="10" id="trU-nt-bd3"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="vbE-QS-gsI"/>
