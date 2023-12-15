@@ -27,8 +27,7 @@ class InterestListViewController: PlainListViewController<Interest, InterestList
 class InterestListDataProvider: AnyPlainListDataProvider<Interest> {
     override func fetchData(offset: Int) async throws -> PlainListResponse<Interest> {
         
-        return .init(list: [], hasNext: false, nextOffset: 0)
-        
+//        return .init(list: [], hasNext: false, nextOffset: 0)
         
         return .init(list: [
             Interest(id: "0", intro: "喜欢看电影、小说，喜欢唱歌、打牌，打麻将，还喜欢游泳，打羽毛球。喜欢看电影、小说，喜欢唱歌、打牌，打麻将，还喜欢游泳，打羽毛球。喜欢看电影、小说，喜欢唱歌、打牌，打麻将，还喜欢游泳，打羽毛球。喜欢看电影、小说，喜欢唱歌、打牌，打麻将，还喜欢游泳，打羽毛球。喜欢看电影、小说，喜欢唱歌、打牌，打麻将，还喜欢游泳，打羽毛球。"),

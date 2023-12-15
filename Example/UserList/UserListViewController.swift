@@ -13,9 +13,16 @@ class UserListViewController: PlainListViewController<User, UserListCell>, UIGes
     
     @NavigationModule var navigationModule
     
+    
+    var barStyle: _NavigationModule.BackgroundStyle = .default
+    var autoAdjustAlpha = false
+    
+    var barButtonItems: [UIBarButtonItem] = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "用户"
+        self.navigationController?.interactivePopGestureRecognizer?.delegate = self
         
         let backItem = UIBarButtonItem(image: UIImage(systemName: "chevron.backward"), primaryAction: UIAction.init(handler: { [weak self] _ in
             self?.navigationController?.popViewController(animated: true)
@@ -27,7 +34,6 @@ class UserListViewController: PlainListViewController<User, UserListCell>, UIGes
             self?.navigationController?.navigationBar.isHidden = true
             self?.navigationController?.pushViewController(interestListVC, animated: true)
         }))
-        
         editItem.badge = .text("9")
         
         let shareItem = BadgeBarButtonItem(image: UIImage(systemName: "square.and.arrow.up"), primaryAction: UIAction.init(handler: { _ in
@@ -38,13 +44,49 @@ class UserListViewController: PlainListViewController<User, UserListCell>, UIGes
         let moreItem = BadgeBarButtonItem(image: UIImage(systemName: "ellipsis"), primaryAction: UIAction.init(handler: { _ in
             debugPrint("more")
         }))
+        navigationItem.rightBarButtonItems = [editItem, shareItem, moreItem]
         
-        let items: [UIBarButtonItem] = [editItem, shareItem, moreItem]
-        items.forEach({ $0.tintColor = .black })
-        navigationItem.rightBarButtonItems = items
+        barButtonItems = [backItem, editItem, shareItem, moreItem]
+        barButtonItems.forEach({ $0.tintColor = .black })
         
         navigationModule.rightBarButtonItemSpacing = 0
-        navigationController?.interactivePopGestureRecognizer?.delegate = self
+        navigationModule.backgroundStyle = barStyle
+        if case .solid = barStyle, autoAdjustAlpha {
+            self.title = nil
+        } else if case .clear = barStyle {
+            self.title = nil
+            self.view.backgroundColor = .lightGray
+        } else if case .transparent = barStyle {
+            self.title = nil
+        }
+    }
+    
+    override func configure(cell: UserListCell, indexPath: IndexPath, item: User) {
+        if case .clear = barStyle {
+            cell.updateLineColor(color: UIColor.darkGray.withAlphaComponent(0.3))
+        }
+    }
+    
+    override func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        guard case .solid(let uIColor) = barStyle, autoAdjustAlpha else {
+            return
+        }
+        var alpha: CGFloat = 0
+        let contentOffsetY = scrollView.contentOffset.y + collectionView.adjustedContentInset.top
+        if contentOffsetY >= 0 {
+            alpha = contentOffsetY / 20.0
+        }
+        navigationModule.backgroundStyle = .solid(uIColor.withAlphaComponent(alpha))
+        
+        let color: UIColor
+        if contentOffsetY <= 10 {
+            let alpha = contentOffsetY / 10
+            color = UIColor.black.withAlphaComponent(1 - alpha)
+        } else {
+            let alpha = (contentOffsetY - 10) / 10
+            color = UIColor.white.withAlphaComponent(alpha)
+        }
+        barButtonItems.forEach({ $0.tintColor = color })
     }
 }
 
