@@ -67,27 +67,27 @@ class UserListViewController: PlainListViewController<User, UserListCell>, UIGes
         }
     }
     
-    override func scrollViewDidScroll(_ scrollView: UIScrollView) {
-        guard case .solid(let uIColor) = barStyle, autoAdjustAlpha else {
-            return
-        }
-        var alpha: CGFloat = 0
-        let contentOffsetY = scrollView.contentOffset.y + collectionView.adjustedContentInset.top
-        if contentOffsetY >= 0 {
-            alpha = contentOffsetY / 20.0
-        }
-        navigationModule.backgroundStyle = .solid(uIColor.withAlphaComponent(alpha))
-        
-        let color: UIColor
-        if contentOffsetY <= 10 {
-            let alpha = contentOffsetY / 10
-            color = UIColor.black.withAlphaComponent(1 - alpha)
-        } else {
-            let alpha = (contentOffsetY - 10) / 10
-            color = UIColor.white.withAlphaComponent(alpha)
-        }
-        barButtonItems.forEach({ $0.tintColor = color })
-    }
+//    override func scrollViewDidScroll(_ scrollView: UIScrollView) {
+//        guard case .solid(let uIColor) = barStyle, autoAdjustAlpha else {
+//            return
+//        }
+//        var alpha: CGFloat = 0
+//        let contentOffsetY = scrollView.contentOffset.y + collectionView.adjustedContentInset.top
+//        if contentOffsetY >= 0 {
+//            alpha = contentOffsetY / 20.0
+//        }
+//        navigationModule.backgroundStyle = .solid(uIColor.withAlphaComponent(alpha))
+//        
+//        let color: UIColor
+//        if contentOffsetY <= 10 {
+//            let alpha = contentOffsetY / 10
+//            color = UIColor.black.withAlphaComponent(1 - alpha)
+//        } else {
+//            let alpha = (contentOffsetY - 10) / 10
+//            color = UIColor.white.withAlphaComponent(alpha)
+//        }
+//        barButtonItems.forEach({ $0.tintColor = color })
+//    }
 }
 
 class UserListDataProvider: AnyPlainListDataProvider<User> {

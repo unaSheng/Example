@@ -11,8 +11,8 @@
 		FA9263262B2AA58200C96EE9 /* InterestListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9263252B2AA58200C96EE9 /* InterestListCell.swift */; };
 		FA9263282B2AA59100C96EE9 /* InterestListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9263272B2AA59100C96EE9 /* InterestListViewController.swift */; };
 		FA92632A2B2AA61D00C96EE9 /* Interest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9263292B2AA61D00C96EE9 /* Interest.swift */; };
-		FAA259B82B2952F90019D4FA /* NavigationModule in Frameworks */ = {isa = PBXBuildFile; productRef = FAA259B72B2952F90019D4FA /* NavigationModule */; };
-		FAA259BA2B2952FC0019D4FA /* PlainListViewController in Frameworks */ = {isa = PBXBuildFile; productRef = FAA259B92B2952FC0019D4FA /* PlainListViewController */; };
+		FAE87E002B459CE300AAE392 /* NavigationModule in Frameworks */ = {isa = PBXBuildFile; productRef = FAE87DFF2B459CE300AAE392 /* NavigationModule */; };
+		FAE87E022B459CE600AAE392 /* PlainListViewController in Frameworks */ = {isa = PBXBuildFile; productRef = FAE87E012B459CE600AAE392 /* PlainListViewController */; };
 		FAF3C7D12B0DCD2F0029AB14 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF3C7D02B0DCD2F0029AB14 /* AppDelegate.swift */; };
 		FAF3C7D52B0DCD2F0029AB14 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF3C7D42B0DCD2F0029AB14 /* ViewController.swift */; };
 		FAF3C7D82B0DCD2F0029AB14 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAF3C7D62B0DCD2F0029AB14 /* Main.storyboard */; };
@@ -28,11 +28,11 @@
 		2E809A08A233C71228BE9D0D /* libPods-Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		343EFF8F52A4264D7346E00A /* Pods-Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Example.release.xcconfig"; path = "Target Support Files/Pods-Example/Pods-Example.release.xcconfig"; sourceTree = "<group>"; };
 		67A66D2A89F8B52EB6C97ADF /* Pods-Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Example.debug.xcconfig"; path = "Target Support Files/Pods-Example/Pods-Example.debug.xcconfig"; sourceTree = "<group>"; };
-		FA7585B22B28372900A5FC6E /* NavigationModule */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = NavigationModule; path = ../NavigationModule; sourceTree = "<group>"; };
 		FA9263252B2AA58200C96EE9 /* InterestListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterestListCell.swift; sourceTree = "<group>"; };
 		FA9263272B2AA59100C96EE9 /* InterestListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterestListViewController.swift; sourceTree = "<group>"; };
 		FA9263292B2AA61D00C96EE9 /* Interest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Interest.swift; sourceTree = "<group>"; };
-		FAA259B62B2952930019D4FA /* PlainListViewController */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = PlainListViewController; path = ../PlainListViewController; sourceTree = "<group>"; };
+		FAE87DFD2B459CD500AAE392 /* NavigationModule */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = NavigationModule; path = ../NavigationModule; sourceTree = "<group>"; };
+		FAE87DFE2B459CDB00AAE392 /* PlainListViewController */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = PlainListViewController; path = ../PlainListViewController; sourceTree = "<group>"; };
 		FAF3C7CD2B0DCD2F0029AB14 /* Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAF3C7D02B0DCD2F0029AB14 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FAF3C7D42B0DCD2F0029AB14 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -51,9 +51,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FAA259B82B2952F90019D4FA /* NavigationModule in Frameworks */,
+				FAE87E002B459CE300AAE392 /* NavigationModule in Frameworks */,
 				255894BCD66AB90BC0292AF6 /* libPods-Example.a in Frameworks */,
-				FAA259BA2B2952FC0019D4FA /* PlainListViewController in Frameworks */,
+				FAE87E022B459CE600AAE392 /* PlainListViewController in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,8 +72,8 @@
 		FAF3C7C42B0DCD2F0029AB14 = {
 			isa = PBXGroup;
 			children = (
-				FAA259B62B2952930019D4FA /* PlainListViewController */,
-				FA7585B22B28372900A5FC6E /* NavigationModule */,
+				FAE87DFE2B459CDB00AAE392 /* PlainListViewController */,
+				FAE87DFD2B459CD500AAE392 /* NavigationModule */,
 				FAF3C7CF2B0DCD2F0029AB14 /* Example */,
 				FAF3C7CE2B0DCD2F0029AB14 /* Products */,
 				FAF3C7FA2B0E02CB0029AB14 /* Frameworks */,
@@ -143,8 +143,8 @@
 			);
 			name = Example;
 			packageProductDependencies = (
-				FAA259B72B2952F90019D4FA /* NavigationModule */,
-				FAA259B92B2952FC0019D4FA /* PlainListViewController */,
+				FAE87DFF2B459CE300AAE392 /* NavigationModule */,
+				FAE87E012B459CE600AAE392 /* PlainListViewController */,
 			);
 			productName = Example;
 			productReference = FAF3C7CD2B0DCD2F0029AB14 /* Example.app */;
@@ -174,8 +174,6 @@
 				Base,
 			);
 			mainGroup = FAF3C7C42B0DCD2F0029AB14;
-			packageReferences = (
-			);
 			productRefGroup = FAF3C7CE2B0DCD2F0029AB14 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -390,6 +388,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = DDPY9JD4B3;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Example/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -419,6 +418,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = DDPY9JD4B3;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Example/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -463,11 +463,11 @@
 /* End XCConfigurationList section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		FAA259B72B2952F90019D4FA /* NavigationModule */ = {
+		FAE87DFF2B459CE300AAE392 /* NavigationModule */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = NavigationModule;
 		};
-		FAA259B92B2952FC0019D4FA /* PlainListViewController */ = {
+		FAE87E012B459CE600AAE392 /* PlainListViewController */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = PlainListViewController;
 		};
